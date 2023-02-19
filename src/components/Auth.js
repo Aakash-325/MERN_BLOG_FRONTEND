@@ -21,8 +21,7 @@ const Auth = () => {
       email: e.target.email.value,
       password: e.target.password.value
     }
-    console.log(payload)
-
+    
     const res = await axios.post(`${API_ENDPOINT}/api/user/${type}`, payload).catch(err => console.log(err))
 
     const data = await res.data;

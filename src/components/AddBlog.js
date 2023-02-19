@@ -18,7 +18,7 @@ const AddBlog = () => {
       user: user
     }).catch(err => console.log(err));
     const data = res.data;
-    console.log(res)
+    window.location.href = '/myblogs'
     return data;
   }
 

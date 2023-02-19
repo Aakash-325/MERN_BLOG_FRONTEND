@@ -21,7 +21,6 @@ const BlogPage = () => {
     getBlog().then(data => (setBlog(data.blog)))
   }, [id])
 
-  console.log(id)
   const paperStyle = {
     padding: " 10px 80px 40px 80px ",
     height: "2000",

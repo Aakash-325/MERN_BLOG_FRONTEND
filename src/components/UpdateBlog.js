@@ -25,14 +25,12 @@ import API_ENDPOINT from '../config';
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const res = await axios.put(`http://localhost:5000/api/blog/update/${id}`, {
+        const res = await axios.put(`${API_ENDPOINT}/api/blog/update/${id}`, {
           title: e.target.title.value,
           description: e.target.description.value,
           image: e.target.image.value
         }).catch(err => console.log(err));
-        if (res.status === 200) {
-            window.location.href = '/myblogs'
-        }
+        window.location.href = '/myblogs'
     }
 
     const handleChange = (e) => {

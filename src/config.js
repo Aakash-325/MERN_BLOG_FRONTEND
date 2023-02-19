@@ -1,2 +1,2 @@
-const API_ENDPOINT = 'http://localhost:5000';
+const API_ENDPOINT = 'https://animekayo.up.railway.app';
 export default API_ENDPOINT;

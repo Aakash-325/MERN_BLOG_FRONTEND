@@ -34,7 +34,7 @@ const UserBlogs = () => {
   // }
 
   const deleteBlog = async (id) => {
-    const res = await axios.delete(`http://localhost:5000/api/blog/delete/${id}`)
+    const res = await axios.delete(`${API_ENDPOINT}/api/blog/delete/${id}`)
       .catch(err => console.log(err))
     const data = res.data;
     return data;
