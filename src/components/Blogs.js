@@ -35,7 +35,6 @@ const Blogs = () => {
                 </Avatar>
               }
               title={blog.title}
-            // subheader="September 14, 2016"
             />
             <CardMedia onClick={()=>navigate(`/blog/page/${blog._id}`)}
               component="img"

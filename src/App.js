@@ -10,7 +10,7 @@ import AddBlog from './components/AddBlog';
 import Footer from './components/Footer';
 import BlogPage from './components/BlogPage';
 import UpdateBlog from './components/UpdateBlog';
-
+ 
 function App() {
 
   return <React.Fragment>
@@ -30,7 +30,7 @@ function App() {
         </Routes>
       </main>
       <Footer>
-        <Footer/>
+        <Footer/> 
       </Footer>
     </React.Fragment>
   ;

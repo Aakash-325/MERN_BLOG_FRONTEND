@@ -10,7 +10,7 @@ const Header = () => {
   const [value, setValue] = useState('one');
 
   const handleChange = (event, newValue) => {
-    setValue(newValue);
+    setValue(newValue); 
   };
 
   return (
